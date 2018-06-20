@@ -1,0 +1,33 @@
+GLSL MATRIX/VECTOR CODE:
+(mat4 myMatrix;)
+(vec4 myVector;)
+
+
+TRANSLATION MATRIX:
+| 1  0  0  X |
+| 0  1  0  Y |
+| 0  0  1  Z |
+| 0  0  0  1 |
+- modify XYZ to translate [position, W=1] vector by scale factor
+GLSL CODE:
+(vec4 transformedVector = myMatrix * myVector;)
+
+
+SCALING MATRIX:
+| X  0  0  0|
+| 0  Y  0  0|
+| 0  0  Z  0|
+| 0  0  0  1|
+- modify XYZ to scale [position/direction, W=1/0] vector by scale factor
+
+
+Modification order:
+(transformedVector = TranslationMatrix * RotationMatrix * ScaleMatrix * OriginalVector;)
+Orders as: scale -> rotate -> translate
+
+
+----------------------------------------------------------------------------------------
+
+MODEL, VIEW, and PROJECTION MATRICES:
+-abbreviated MVP. GLSL code:
+(transformed_vertex = MVP * in_vertex;)
