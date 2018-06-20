@@ -40,8 +40,8 @@ Notes:
 #include <glm/gtx/string_cast.hpp> // variable display (debugging)
 using namespace glm; //allows for 'vec3' instead of 'glm::vec3', for example
 
-#include "GLShader.hpp"
-#include "createMVPmat.hpp"
+#include "common/GLShader.hpp"
+#include "common/generate_MVP.hpp"
 
 // Define global variables:
 GLuint program; //program handle
@@ -125,7 +125,6 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 		glfwSetWindowShouldClose(window, GL_TRUE);
 		std::cout << "'ESC' key pressed - PROGRAM EXIT" << std::endl;
 	}
-	// if (key == (
 }
 
 

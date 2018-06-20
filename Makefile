@@ -1,5 +1,5 @@
 # source C++ files for the project:
-SRC = main.cpp GLShader.cpp createMVPmat.cpp
+SRC = main.cpp common/GLShader.cpp common/generate_MVP.cpp
 
 # object files to be compiled together:
 OBJS = $(SRC:.cpp = .o)

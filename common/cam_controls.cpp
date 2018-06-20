@@ -23,14 +23,14 @@ Notes:
 ================================================================================================================
 */
 
-#include "cam_control.hpp"
+#include "cam_controlS.hpp"
 #include <glm/glm.hpp>
 using namespace glm; //allows for 'vec3' instead of 'glm::vec3', for example
 
 
+void cam_controls() {
 
 
-void controls() {
 
 
 

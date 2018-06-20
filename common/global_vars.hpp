@@ -12,7 +12,7 @@ extern GLuint vao; //vertex array object
 extern GLuint vb; //vertex buffer
 extern GLuint cb; //color buffer
 
-// Colors:
+// Background Colors:
 extern static const GLfloat black[] = {0.0f, 0.0f, 0.0f, 1.0f};
 extern static const GLfloat white[] = {1.0f, 1.0f, 1.0f, 1.0f};
 
